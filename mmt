@@ -1,0 +1,88 @@
+suply chain, qr code, metadata 
+50 collection = 320cr
+
+Mongo db  - kafka ---Engine DSL - kafka - clickhouse
+
+Engine - 
+    cONSUMER- 
+        producer - pull data puts channel 
+            reading kafka topic placing channel 
+        processer - routines - configurble
+            runs routiens - configurable 
+            DSL - JSON - 
+
+            ip - x, y, mn
+            json - 
+                x :xx
+                y : yy
+                xy : target
+
+                address{
+                
+                asy :        {
+                    syx
+                }}
+                address:asy:syx
+
+date - unix, dddmm
+mrp - 40 rs, 40
+
+    producer 
+    
+    we want to custoemr come back
+    increase engagement of user
+    menu - gamezone - game, reward, reward to purchase 
+
+    1 game - baloon shooter
+        pts get added based on baloon 
+
+    gamezone - list of games 
+            image ,title of game, descriptio, start otpin
+
+    home game, go play game,             
+
+    concept of tournament - to evaluate & reward user, st & end time to enter & play game else show msg to comback later
+
+    game time - 45 minute , inc attention plan, way to continue to play toward end of game, 
+    real time scoreboard, top 100, 
+    reward update - pretty close to real time 
+    reward - top x users
+
+    dbs, api's, how req, resp look like , 
+    components(which apis executes here) & purpose of it
+
+
+    Menu - 
+        games listing (image, category)
+        
+
+    games_1 - 
+        with desc, images, play
+        play ->
+    
+        
+        backend - individual game , 
+            /baloons - {
+                    baloon  - color 
+                    val - reward - 0 to 100 
+                }
+            /shooter
+                {
+                    increase-  reward
+                }
+
+                DB - userId, gameId, reward
+
+            /scoreboardUpdate
+                userid, rank, score 
+                
+            1. getting top scores
+                score, userID 
+                maxHeap, {score, userMeta}
+
+            /shooter    
+                post /updateDB 
+                post /scoreboardUpdate
+
+            /getScoreboard
+                response -{userid, score, rank}
